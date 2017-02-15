@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chan.sethisollu.MainFragment"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/selected_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:text="91"
+        android:gravity="right"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:text="91"
+        android:gravity="right"
+        android:inputType="phone"
+        app:layout_constraintTop_toTopOf="@+id/phone_no_text"
+        app:layout_constraintBottom_toBottomOf="@+id/phone_no_text"
+        app:layout_constraintLeft_toLeftOf="@+id/content_main_layout"
+        app:layout_constraintRight_toLeftOf="@+id/phone_no_text"
+        android:paddingRight="24dp"/>
+
+    <EditText
+        android:id="@+id/phone_no_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:hint="@string/phone_no"
+        android:maxLength="10"
+        android:gravity="left"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/message_text"
+        app:layout_constraintLeft_toLeftOf="@+id/content_main_layout"
+        app:layout_constraintRight_toRightOf="@+id/content_main_layout" />
+
+    <EditText
+        android:id="@+id/message_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:hint="@string/message"
+        android:maxLines="3"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/content_main_layout"
+        app:layout_constraintLeft_toLeftOf="@+id/content_main_layout"
+        app:layout_constraintRight_toRightOf="@+id/content_main_layout"
+        app:layout_constraintTop_toTopOf="@+id/content_main_layout" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:layout_constraintBottom_toBottomOf="@+id/content_main_layout"
+        app:layout_constraintRight_toRightOf="@+id/content_main_layout"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+</android.support.constraint.ConstraintLayout>

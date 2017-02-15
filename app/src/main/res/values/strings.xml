@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Sethi Sollu</string>
+    <string name="action_settings">Settings</string>
+    <string name="phone_no">Enter Phone No</string>
+    <string name="message">Enter Message</string>
+    <string name="action_whatsapp">WhatsApp</string>
+    <string name="action_line">Line</string>
+    <string name="action_we_chat">We Chat</string>
+</resources>
